@@ -1,0 +1,235 @@
+/* Variables */
+:root {
+  --primary-font: 'Roboto';
+  --logo-font: 'Raleway', 'Geneva', 'Arial', sans-serif;
+
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --white-text-color: #fff;
+  --black-text-color: #000;
+
+  --primary-bgr-color: #fff;
+  --hero-bgr-color: #2f303a;
+  --footer-bgr-color: #2f303a;
+  --accent-bgr-color: #188ce8;
+  --element-bgr-color: #f5f4fa;
+
+  --accent-color: #2196f3;
+
+  --btn-shadow-color: rgba(0, 0, 0, 0.15);
+  --btn-shadow-color-param-1: rgba(0, 0, 0, 0.1);
+  --btn-shadow-color-param-2: rgba(0, 0, 0, 0.08);
+  --btn-shadow-color-param-3: rgba(0, 0, 0, 0.12);
+
+  --contacts-text-color: rgba(255, 255, 255, 0.6);
+}
+
+/* General */
+body {
+  font-family: var(--primary-font);
+  color: var(--primary-text-color);
+  background-color: var(--primary-bgr-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: inherit;
+}
+
+h2,
+h3 {
+  color: var(--title-text-color);
+}
+
+/* Header */
+.page-header {
+  background-color: var(--primary-bgr-color);
+}
+
+.logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  color: var(--accent-color);
+}
+
+.logo-dark-part {
+  color: var(--black-text-color);
+}
+
+.logo-light-part {
+  color: var(--white-text-color);
+}
+
+/* Navigation & Contact Information*/
+.main-nav-list,
+.contacts-list {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.main-nav-list a {
+  color: var(--title-text-color);
+}
+
+.contacts-list a {
+  color: var(--primary-text-color);
+}
+
+.main-nav-list .current {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero {
+  background: var(--hero-bgr-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-text-color);
+}
+
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: var(--white-text-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px var(--btn-shadow-color);
+  border-radius: 4px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--accent-bgr-color);
+}
+
+/* Features */
+.features-list .item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-list .item-descr {
+  line-height: 1.71;
+}
+
+/* Directions & Team*/
+.directions-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team {
+  background: var(--element-bgr-color);
+}
+
+.team-list {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-list .item-title {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Portfolio */
+.portfolio-tabs-list button {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+
+  background: var(--portfolio-btn-brg-color);
+  box-shadow: 0px 3px 1px var(--btn-shadow-color-param-1),
+    0px 1px 2px var(--btn-shadow-color-param-2), 0px 2px 2px var(--btn-shadow-color-param-3);
+  border-radius: 4px;
+  color: var(--title-text-color);
+  cursor: pointer;
+}
+
+.portfolio-tabs-list button:hover,
+.portfolio-tabs-list button:focus {
+  background: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+.projects-list .item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.projects-list .item-descr {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* Footer */
+.page-footer {
+  background: var(--footer-bgr-color);
+}
+
+.address-info-list {
+  line-height: 1.71;
+}
+
+.address-info-list a {
+  color: var(--contacts-text-color);
+}
+
+.address-info-list .address {
+  color: var(--white-text-color);
+}
+
+/* General */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.color-accent:hover,
+.color-accent:focus {
+  color: var(--accent-color);
+}
